@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  padding: 2rem;
+  margin: 0;
+  font-family: $font-family-sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  color: $fosc;
+
+  @media screen  and (min-width: $mqMinWidth){
+    font-size: 16px;
+  }
+}
+
+.responsive {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+.wrapper{
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background: linear-gradient($grisClaro, $fosc); 
+}
+
+header .foto {
+  margin-top: 20px;
+  line-height: 70px;
+  color:$blanc;
+  text-align: center;
+}
+
+header .nom {
+  margin-top: 20px;
+  line-height: 70px;
+  color:$blanc;
+  text-align: center;
+}
+
+@media screen and (min-width: $mqMinWidth){
+  header .nom {
+    float:right;
+    line-height: 100px;
+    color:$blanc;
+  }
+
+  header .foto{
+    float:left;
+    margin-top: 20px;
+    line-height: 100px;
+  }
+}
+
+.nav-bg {
+  background-color: $grisClaro;
+}
+
+.dades-personals {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $mqMinWidth) {
+  .dades-personals {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+}
+
+.dades-personals a {
+  display: block;
+  padding: 1rem;
+  font-size: 14px;
+  font-weight: 700;
+  color: $fosc;
+  text-align: center;
+  text-decoration: none;
+
+  @media screen  and (min-width: $mqMinWidth){
+    font-size: 18px;
+  }
+}
+
+.dades-personals a:hover {
+  color: $fosc;
+  background-color: $primari;
+}
+
+.dades-academiques{
+  color:$blanc;
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+}
+
+.contingut-dades-academiques {
+  background-color: rgb( 0 0 0 / 70% );
+}
+
+.linea {
+  max-width: 1250px;
+  height: 2px;
+  padding: 0;
+  border-top: 2px solid $gris;
+}
+
+.cv-footer {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient($grisClaro, $fosc); 
+}
+
